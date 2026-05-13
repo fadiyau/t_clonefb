@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Facebook Clone Tailwind</title>
+</head>
+<body class="bg-[#f0f2f5] text-[#050505] font-sans pt-[56px] overflow-x-hidden">
+    <nav class="navbar flex justify-between items-center px-4 bg-white h-[56px] shadow-sm fixed top-0 inset-x-0 z-[1000]">
+        <div class="left">
+            <i class="fa-brands fa-facebook fa-logo"></i>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass" style="color: #707070;"></i>
+                <input type="text" name="search-name" id="" style="border: none; outline: none;" placeholder="Cari di Facebook">
+            </div>
+        </div>
+        <div class="middle">
+            <div class="icon-middle active">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="icon-middle">
+                <a href="/friends.html" style="color: #707070;">
+                    <i class="fa-solid fa-user-group"></i>
+                </a>
+            </div>
+            <div class="icon-middle">
+                <i class="fa-solid fa-clapperboard"></i>
+            </div>
+            <div class="icon-middle">
+                <i class="fa-solid fa-basket-shopping"></i>
+            </div>
+            <div class="icon-middle">
+                <i class="fa-solid fa-people-roof"></i>
+            </div>
+        </div>
+        <div class="right">
+            <div class="icon-right mobile-icon" style="position: relative;">
+                <i class="fas fa-bars"></i> 
+                <div class="mobile-dropdown">
+                    <div class="md-header-top">
+                        <h2>Menu</h2>
+                    </div>
+                    <div class="list-one">
+                        <div class="md-card">
+                            <div class="md-search">
+                                <i class="fa-solid fa-magnifying-glass" style="color: #707070;"></i>
+                                <input type="text" name="mds-name" id="" style="border: none; outline: none;" placeholder="Cari Menu">
+                            </div>
+                            <div class="md-grid">
+                                <h3>Sosial</h3>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Acara</h5>
+                                        <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Teman</h5>
+                                        <p>
+                                            Cari teman atau orang yang mungkin Anda kenal.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Grup</h5>
+                                        <p>
+                                            Berinteraksi dengan orang yang memiliki minat yang sama.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar Beranda</h5>
+                                        <p>
+                                            Lihat postingan relevan dari orang dan Halaman yang Anda ikuti.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar</h5>
+                                        <p>
+                                            Lihat postingan terbaru dari teman grup, Halaman dan lainnya.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Halaman</h5>
+                                        <p>
+                                            Temukan dan terhubung dengan bisnis di Facebook
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-separator"></div>
+                            </div>
+                            <div class="md-grid">
+                                <h3>Hiburan</h3>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Acara</h5>
+                                        <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Teman</h5>
+                                        <p>
+                                            Cari teman atau orang yang mungkin Anda kenal.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Grup</h5>
+                                        <p>
+                                            Berinteraksi dengan orang yang memiliki minat yang sama.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar Beranda</h5>
+                                        <p>
+                                            Lihat postingan relevan dari orang dan Halaman yang Anda ikuti.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar</h5>
+                                        <p>
+                                            Lihat postingan terbaru dari teman grup, Halaman dan lainnya.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Halaman</h5>
+                                        <p>
+                                            Temukan dan terhubung dengan bisnis di Facebook
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-separator"></div>
+                            </div>
+                            <div class="md-grid">
+                                <h3>Belanja</h3>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Acara</h5>
+                                        <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Teman</h5>
+                                        <p>
+                                            Cari teman atau orang yang mungkin Anda kenal.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Grup</h5>
+                                        <p>
+                                            Berinteraksi dengan orang yang memiliki minat yang sama.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar Beranda</h5>
+                                        <p>
+                                            Lihat postingan relevan dari orang dan Halaman yang Anda ikuti.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar</h5>
+                                        <p>
+                                            Lihat postingan terbaru dari teman grup, Halaman dan lainnya.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Halaman</h5>
+                                        <p>
+                                            Temukan dan terhubung dengan bisnis di Facebook
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-separator"></div>
+                            </div>
+                            <div class="md-grid">
+                                <h3>Pribadi</h3>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Acara</h5>
+                                        <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Teman</h5>
+                                        <p>
+                                            Cari teman atau orang yang mungkin Anda kenal.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Grup</h5>
+                                        <p>
+                                            Berinteraksi dengan orang yang memiliki minat yang sama.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar Beranda</h5>
+                                        <p>
+                                            Lihat postingan relevan dari orang dan Halaman yang Anda ikuti.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar</h5>
+                                        <p>
+                                            Lihat postingan terbaru dari teman grup, Halaman dan lainnya.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Halaman</h5>
+                                        <p>
+                                            Temukan dan terhubung dengan bisnis di Facebook
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-separator"></div>
+                            </div>
+                            <div class="md-grid">
+                                <h3>Profesional</h3>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Acara</h5>
+                                        <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Teman</h5>
+                                        <p>
+                                            Cari teman atau orang yang mungkin Anda kenal.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Grup</h5>
+                                        <p>
+                                            Berinteraksi dengan orang yang memiliki minat yang sama.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar Beranda</h5>
+                                        <p>
+                                            Lihat postingan relevan dari orang dan Halaman yang Anda ikuti.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar</h5>
+                                        <p>
+                                            Lihat postingan terbaru dari teman grup, Halaman dan lainnya.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Halaman</h5>
+                                        <p>
+                                            Temukan dan terhubung dengan bisnis di Facebook
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-separator"></div>
+                            </div>
+                            <div class="md-grid">
+                                <h3>Lainnya dari Meta</h3>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Acara</h5>
+                                        <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Teman</h5>
+                                        <p>
+                                            Cari teman atau orang yang mungkin Anda kenal.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Grup</h5>
+                                        <p>
+                                            Berinteraksi dengan orang yang memiliki minat yang sama.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar Beranda</h5>
+                                        <p>
+                                            Lihat postingan relevan dari orang dan Halaman yang Anda ikuti.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Kabar</h5>
+                                        <p>
+                                            Lihat postingan terbaru dari teman grup, Halaman dan lainnya.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <div class="mdgc-info">
+                                        <h5>Halaman</h5>
+                                        <p>
+                                            Temukan dan terhubung dengan bisnis di Facebook
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md-card">
+                            <div class="md-grid">
+                                <h3>Buat</h3>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <h5 style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">Acara</h5>                             
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <h5 style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">Acara</h5>                             
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <h5 style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">Acara</h5>                             
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <h5 style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">Acara</h5>                             
+                                </div>
+                                <div class="md-separator"></div>
+                            </div>
+                            <div class="md-grid">
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <h5 style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">Acara</h5>                             
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <h5 style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">Acara</h5>                             
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <h5 style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">Acara</h5>                             
+                                </div>
+                                <div class="md-grid-card">
+                                    <i class="fas fa-user-friends" style="color: #1877f2;"></i>
+                                    <h5 style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">Acara</h5>                             
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-right mobile-icon" style="position: relative;">
+                <i class="bi bi-chat-dots-fill"></i> 
+                <div class="mobile-dropdown">
+                    <div class="md-header-top" style="display: flex; justify-content: space-between; align-items: center;">
+                        <h2>Obrolan</h2>
+                        <div class="msg-icon">
+                            <div class="msgi-i">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <div class="msgi-i">
+                                <i class="fa-solid fa-maximize"></i>
+                            </div>
+                            <div class="msgi-i">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-search">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #707070;"></i>
+                        <input type="text" name="mds-name" id="" style="border: none; outline: none;" placeholder="Cari Menu">
+                    </div>
+                    <div class="msg-menu">
+                        <div class="msgm-option">
+                            Semua
+                        </div>
+                        <div class="msgm-option">
+                            Belum Dibaca
+                        </div>
+                        <div class="msgm-option">
+                            Grup
+                        </div>
+                        <div class="msgm-option">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="md-grid list-two">
+                        <div class="md-grid-card">
+                            <img src="https://i.pravatar.cc/300?img=1" class="fc-img" alt="">    
+                            <div class="mdgc-info">
+                                <h5>Meta AI</h5>
+                                <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                            </div>
+                        </div>
+                        <div class="md-grid-card">
+                            <img src="https://i.pravatar.cc/300?img=1" class="fc-img" alt="">    
+                            <div class="mdgc-info">
+                                <h5>Meta AI</h5>
+                                <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                            </div>
+                        </div>
+                        <div class="md-grid-card">
+                            <img src="https://i.pravatar.cc/300?img=1" class="fc-img" alt="">    
+                            <div class="mdgc-info">
+                                <h5>Meta AI</h5>
+                                <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                            </div>
+                        </div>
+                        <div class="md-grid-card">
+                            <img src="https://i.pravatar.cc/300?img=1" class="fc-img" alt="">    
+                            <div class="mdgc-info">
+                                <h5>Meta AI</h5>
+                                <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                            </div>
+                        </div>
+                        <div class="md-grid-card">
+                            <img src="https://i.pravatar.cc/300?img=1" class="fc-img" alt="">    
+                            <div class="mdgc-info">
+                                <h5>Meta AI</h5>
+                                <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                            </div>
+                        </div>
+                        <div class="md-grid-card">
+                            <img src="https://i.pravatar.cc/300?img=2" class="fc-img" alt="">    
+                            <div class="mdgc-info">
+                                <h5>Meta AI</h5>
+                                <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                            </div>
+                        </div>
+                        <div class="md-grid-card">
+                            <img src="https://i.pravatar.cc/300?img=3" class="fc-img" alt="">    
+                            <div class="mdgc-info">
+                                <h5>Meta AI</h5>
+                                <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                            </div>
+                        </div>
+                        <div class="md-grid-card">
+                            <img src="https://i.pravatar.cc/300?img=4" class="fc-img" alt="">    
+                            <div class="mdgc-info">
+                                <h5>Meta AI</h5>
+                                <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                            </div>
+                        </div>
+                        <div class="md-grid-card">
+                            <img src="https://i.pravatar.cc/300?img=5" class="fc-img" alt="">    
+                            <div class="mdgc-info">
+                                <h5>Meta AI</h5>
+                                <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                            </div>
+                        </div>
+                        <div class="md-grid-card">
+                            <img src="https://i.pravatar.cc/300?img=6" class="fc-img" alt="">    
+                            <div class="mdgc-info">
+                                <h5>Meta AI</h5>
+                                <p>Kelola atau temukan acara dan hal lain untuk dilakukan secara online dan di sekitar.</p>
+                            </div>
+                        </div>
+                        <div class="md-separator"></div>
+                    </div>
+                    <div class="msg-see">
+                        <a href="#" class="sm-btn">
+                            Lihat semua di Messenger 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-right">
+                <i class="bi bi-bell-fill"></i>
+                <span class="notif-badge">20+</span>
+            </div>
+            <div class="icon-right">
+                <i class="bi bi-person-fill"></i>
+                <div class="profile-badge">
+                    <i class="fas fa-chevron-down" style="font-size: 10px;"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content"> 
+        <!-- Sidebar Left -->
+        <div class="sidebar-left">
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fas fa-user-circle"></i><span>Fdy Fdy</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-brands fa-meta"></i><span>Meta AI</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="/friends.html">
+                    <i class="slli-icons fas fa-user-friends"></i><span>Teman</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-clock"></i><span>Kenangan</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-bookmark"></i><span>Tersimpan</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-people-group"></i><span>Grup</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-clapperboard"></i><span>Reels</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-basket-shopping"></i><span>Marketplace</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-newspaper"></i><span>Kabar</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-calendar"></i><span>Acara</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-chart-simple"></i><span>Pengelola Iklan</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-panorama"></i><span>Aktivitas iklan terkini</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-note-sticky"></i><span>Halaman</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-gamepad"></i><span>Mainkan Game</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-brands fa-meta"></i><span>Mengobrol dengan AI</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-brands fa-facebook-messenger"></i><span>Messenger</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-brands fa-facebook-messenger kids"></i><span>Messenger Anak</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-wallet"></i><span>Pesanan dan Pembayaran</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-cake-candles"></i><span>Ulang Tahun</span>
+                </a>
+            </div>
+            <div class="sll-item">
+                <a href="">
+                    <i class="slli-icons fa-solid fa-vr-cardboard"></i><span>Video Game</span>
+                </a>
+            </div>
+            <div class="sl-footer">
+                <a href="#">Privasi</a> · <a href="#">Ketentuan</a> · <a href="#">Iklan</a> · <a href="#">Pilihan Iklan</a> · <a href="#">Cookie</a> · <a href="#" class="except">Lainnya</a>
+            </div>
+        </div>
+        <!-- Content Middle -->
+        <div class="feeds">
+            <div class="post-create">
+                <div class="pc-wrap">
+                    <a href="#" class=""> 
+                        <i class="pc-user-icon fas fa-user-circle"></i>
+                    </a>
+                    <input type="text" class="pcr-input" name="search-name" id="" placeholder="Apa yang Anda Pikirkan, Fdy?">
+                    <div class="pcr-icons">
+                        <div class="middle-option one"><i class="bi bi-camera-reels-fill"></i></div>
+                        <div class="middle-option two"><i class="bi bi-image-fill"></i></div>
+                        <div class="middle-option three"><i class="bi bi-emoji-smile-fill"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="story-create">
+                <div class="story-container">
+                    <div class="story-card">
+                        <div class="story-img"><img src="https://ui-avatars.com/api/?name=Fdy&background=random" style="width:100%; height:100%; object-fit:cover;"></div>
+                        <div class="story-bottom">
+                            <div class="sb-icon"><i class="bi bi-plus-lg"></i></div>
+                            <div class="sb-text">Buat Cerita</div>
+                        </div>
+                    </div>
+                    <div class="sc-friends" style="background-color: gray; background-image: url('assets/domba.png');">
+                        <img src="https://i.pravatar.cc/150?img=5" class="story-avatar">
+                        <div class="story-name">Friend</div>
+                    </div>
+                    <div class="sc-friends" style="background-color: gray; background-image: url('assets/kelinci.png');">
+                        <img src="https://i.pravatar.cc/150?img=5" class="story-avatar">
+                        <div class="story-name">Friend</div>
+                    </div>
+                    <div class="sc-friends" style="background-color: gray; background-image: url('assets/kucing.png');">
+                        <img src="https://i.pravatar.cc/150?img=5" class="story-avatar">
+                        <div class="story-name">Friend</div>
+                    </div>
+                    <div class="sc-friends" style="background-color: gray; background-image: url('assets/kupu.png');">
+                        <img src="https://i.pravatar.cc/150?img=5" class="story-avatar">
+                        <div class="story-name">Friend</div>
+                    </div>
+                    <div class="sc-friends" style="background-color: gray; background-image: url('assets/sapi.png');">
+                        <img src="https://i.pravatar.cc/150?img=5" class="story-avatar">
+                        <div class="story-name">Friend</div>
+                    </div>
+                </div>
+            </div>
+            <div class="posting">
+                <div class="posting-header">
+                    <div class="phl">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" class="phl-icon" alt="">
+                        <div class="phl-info">
+                            <h4><a href="">Laptop bekas in jakarta city</a>
+                                <span style="color: rgb(14, 14, 200); font-weight: 600;"> 
+                            •
+                            <a href="" style="color: rgb(14, 14, 200); margin-left: 2px;">
+                                Gabung
+                            </a>
+                        </span>
+                            </h4>
+                            <div class="phli-pi">
+                                <p style="color: #707070; font-weight: 600;">
+                                    Donald
+                                </p>
+                                • 
+                                <p style="margin-left: 4px; color: #707070; font-weight: 600;">
+                                    22 Februari pada 04.05
+                                </p>
+                                •
+                                <i class="fa-solid fa-earth-americas" style="font-size: small; color: #707070;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ph-icons">
+                        <div class="phi-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="phi-icon">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="posting-caption">
+                    Dijual laptop beserta kabel, minus hanya tidak ada dusnya saja semuanya masih oke. Minat silakan pc saja.
+                </div>
+                <div class="posting-grid">
+                    <img src="/assets/l1.jpg" class="grid-1" alt="Foto 1">
+                    <img src="/assets/l2.jpg" class="grid-2" alt="Foto 2">
+                    <img src="/assets/l3.jpg" class="grid-3" alt="Foto 3">
+                </div>
+                <div class="posting-price">
+                    <div class="list-info">
+                        <div class="list-price-loc">RP4.500.000 · JAKARTA KOTA, JAKARTA TIMUR</div>
+                        <div class="list-title">(TERJUAL) Lenovo A111111111111</div>
+                    </div>
+                </div>
+                <!-- <div class="posting-status">
+                    <div class="ps-reaction">
+                        <div class="psr-icon">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+                        <span class="psr-count">400</span>
+                    </div>
+                    <div class="ps-comment">
+                        <span class="psr-count">99 Komentar</span>
+                    </div>
+                </div> -->
+                <div class="posting-actions">
+                    <div class="actions-btn">
+                        <i class="fa-solid fa-thumbs-up"></i><span>Suka</span>
+                    </div>
+                    <div class="actions-btn">
+                        <i class="fa-solid fa-comment"></i><span>Komentari</span>
+                    </div>
+                    <div class="actions-btn">
+                        <i class="fa-solid fa-share"></i><span>Bagikan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="posting">
+                <div class="posting-header">
+                    <div class="phl">
+                        <img src="/assets/ads.png" class="phl-icon" alt="" style="width:40px; height: 30px;">
+                        <div class="phl-info">
+                            <h4><a href="">Google Ads</a>
+                                <i class="fas fa-check-circle" style="color: #1877f2; font-size: 13px;"></i>
+                            </h4>
+                            <div class="phli-pi">
+                                <p style="color: #707070; font-weight: 600;">Bersponsor</p>•
+                                <i class="fa-solid fa-earth-americas" style="font-size: small; color: #707070;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ph-icons">
+                        <div class="phi-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="phi-icon">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="posting-caption">
+                    Targetkan calon pembeli yang sedang aktif mencari produk Anda dengan Google Ads di musim belanja ini.
+                </div>
+                <div class="posting-img">
+                    <img src="/assets/adsb.png" alt="">
+                </div>
+                <div class="posting-status">
+                    <div class="ps-reaction">
+                        <div class="psr-icon">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+                        <span class="psr-count">400</span>
+                    </div>
+                    <div class="ps-comment">
+                        <span class="psr-count">99 Komentar</span>
+                    </div>
+                </div>
+                <div class="posting-actions">
+                    <div class="actions-btn">
+                        <i class="fa-solid fa-thumbs-up"></i><span>Suka</span>
+                    </div>
+                    <div class="actions-btn">
+                        <i class="fa-solid fa-comment"></i><span>Komentari</span>
+                    </div>
+                    <div class="actions-btn">
+                        <i class="fa-solid fa-share"></i><span>Bagikan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="posting">
+                <div class="posting-header">
+                    <div class="phl">
+                        <img src="https://i.pravatar.cc/300?img=16" class="phl-icon" alt="">
+                        <div class="phl-info">
+                            <h4><a href="">Syifa</a><span>memperbarui foto profilnya.</span></h4>
+                            <div class="phli-pi">
+                                <p>6 hari</p>•<i class="fas fa-user-friends"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ph-icons">
+                        <div class="phi-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="phi-icon">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="posting-img">
+                    <img src="https://i.pravatar.cc/300?img=16" alt="">
+                </div>
+                <div class="posting-status">
+                    <div class="ps-reaction">
+                        <div class="psr-icon">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <span class="psr-count">10</span>
+                    </div>
+                    <div class="ps-comment">
+                        <span class="psr-count">5 Komentar</span>
+                    </div>
+                </div>
+                <div class="posting-actions">
+                    <div class="actions-btn">
+                        <i class="fa-solid fa-thumbs-up"></i><span>Suka</span>
+                    </div>
+                    <div class="actions-btn">
+                        <i class="fa-solid fa-comment"></i><span>Komentari</span>
+                    </div>
+                    <div class="actions-btn">
+                        <i class="fa-solid fa-share"></i><span>Bagikan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar Right -->
+        <div class="sidebar-right">
+            <div class="sidebar-right-menu">
+                <h3>Bersponsor</h3>
+            </div>
+            <div class="sidebar-right-iklan">
+                <img src="assets/adb.png" alt="" width="150px" height="120px" style="border-radius: 15px; margin-right: 12px;">
+                <div class="iklan">
+                    <p><b>
+                        See what a new app can do.
+                    </b></p>
+                    <div class="">
+                        <a href="">adobe.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-right-iklan">
+                <img src="assets/mongo.png" alt="" width="150px" height="120px" style="border-radius: 15px; margin-right: 12px;">
+                <div class="iklan">
+                    <p><b>
+                        Register today for free!
+                    </b></p>
+                    <div class="">
+                        <a href="">
+                            learn.mongodb.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-right-separator"></div>
+            <div class="sidebar-right-menu">
+                <h3>Ulang Tahun</h3>
+            </div>
+            <div class="sidebar-right-birthday">
+                <i class="fas fa-gift gift-icon"></i>
+                <span><b>Fadya</b> ultah hari ini.</span>
+            </div>
+            <div class="sidebar-right-separator"></div>
+            <div class="sidebar-right-menu">
+                <h3>Kontak</h3>
+                <div class="icons-menu">
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="src-item"><img class="sidebar-user" src="/assets/meta.png" alt=""><span>Meta AI</span></div>
+            <div class="src-item"><img class="sidebar-user" src="/assets/maleficent.png" alt=""><span>Maleficent</span></div>
+            <div class="src-item"><img class="sidebar-user" src="/assets/moana.png" alt=""><span>Moana</span></div>
+            <div class="src-item"><img class="sidebar-user" src="/assets/abi.png" alt=""><span>Abi</span></div>
+            <div class="src-item"><img class="sidebar-user" src="/assets/zahra.png" alt=""><span>Aulia</span></div>
+            <div class="src-item"><img class="sidebar-user" src="/assets/zaki.png" alt=""><span>Zaki</span></div>
+            <div class="src-item"><img class="sidebar-user" src="/assets/fdy.png" alt=""><span>Fadya</span></div>
+            <div class="sidebar-right-separator"></div>
+            <div class="sidebar-right-menu">
+                <h3>Obrolan Grup</h3>
+                <div class="icons-menu">
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="src-item">
+                <i class="fa-solid fa-plus"></i>
+                <span>Buat obrolan grup</span>
+            </div>
+        </div>
+    </div>
+    <div class="msg-btn">
+        <i class="fa-solid fa-pen-to-square"></i>
+    </div>
+</body>
